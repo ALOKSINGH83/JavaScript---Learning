@@ -1,27 +1,24 @@
-//QUESTION 3
-let quarts = 3;
-switch(quarts){
-    case 1 :
-        console.log("Months in Quarter 1 : January, February, March");
-        break;
-    case 2 :
-        console.log("Months in Quarter 2 : April, May, June");
-        break;
-    case 3 :
-        console.log("Months in Quarter 3 : July, August, September");
-        break;
-    case 4 :
-        console.log("Months in Quarter 4 : October, November, December");
-        break;
-    default :
-        console.log("Invalid Quarter");
-}
+//QUESTION 5
+let a = 8;
+let b = 10;
+let c = 5;
 
-//Question 4
-let str = "Amplifier";
-if (((str[0]==="A")||(str[0]==="a"))&&(str.length>5)){
-    console.log("Good String");
+if ((a>b)&&(a>c)){
+    console.log("a is largest number");
+}
+else if ((b>a)&&(b>c)){
+    console.log("b is largest number");
 }
 else {
-    console.log("Bad String");
+    console.log("c is largest number");
+}
+
+//QUESTION 6
+let num1 = 32;
+let num2 = 47852;
+if ((num1[num1.length-1])===(num2[num2.length-1])){
+    console.log("Both num have same last digit");
+}
+else {
+    console.log("Both num do not have same last digit");
 }
