@@ -1,12 +1,8 @@
-// QUESTION 1
-let msg = "help!";
-console.log(msg.trim().toUpperCase());
-
-//QUESTION 2
-let name = "ApnaCollege";
-console.log(name.slice(4, 9));
-console.log(name.indexOf("na"));
-console.log(name.replace("Apna", "Our"));
-
-//QUESTION 3
-console.log(name.slice(4).replace("l", "t"));
+let months = ["january", "july", "march", "august"];
+console.log(months);
+months.shift();
+months.shift();
+console.log(months);
+months.unshift("june");
+months.unshift("july");
+console.log(months);
