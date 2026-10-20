@@ -1,5 +1,4 @@
-//QUESTION 1
-let arr = [2, 4, 3, 7, 9, 8];
-let n = 4;
-console.log(arr);
-console.log(arr.slice(0, n));
+//QUESTION 2
+let arr = [1, 3, 5, 2, 7, 9, 8];
+let m = 1;
+console.log(arr[arr.length-m]);
