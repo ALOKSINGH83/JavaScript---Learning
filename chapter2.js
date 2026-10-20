@@ -1,22 +1,13 @@
-//IF Statement
-let age = 21;
-if (age>=18){
-    console.log("You can Vote");
+let marks="89";
+if (marks>=33){
+    console.log("PASS");
+    if (marks>=80){
+        console.log("Grade is : O");
+    }
+    else {
+        console.log("Grade is : A");
+    }
 }
 else {
-    console.log("You cannot vote");
-}
-
-let marks="79";
-if (marks>=80){
-    console.log("A+");
-}
-else if (marks>=60){
-    console.log("A");
-}
-else if (marks>=33){
-    console.log("B");
-}
-else {
-    console.log("F");
+    console.log("Better luck next time");
 }
