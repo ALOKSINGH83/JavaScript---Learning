@@ -1,11 +1,13 @@
-//IF Statement
-let color = "red";
-if (color == "red"){
-    console.log("STOP");
+let size = "M";
+if (size == "XL"){
+    console.log("Price is Rs. 200");
 }
-if (color == "yellow"){
-    console.log("SLOW DOWN");
+else if (size == "L"){
+    console.log("Price is Rs. 150");
 }
-if (color == "green"){
-    console.log("GO!")
+else if (size == "M"){
+    console.log("Price is Rs. 100");
+}
+else {
+    console.log("Price is Rs. 50");
 }
