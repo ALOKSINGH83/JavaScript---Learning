@@ -1,21 +1,11 @@
-// Arithmetic Operations
-let a = 10;
-let b = 5;
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(a % b);
-console.log(a ** b);
+//IF Statement
+let age = 21;
+console.log("code before if statement");
+if (age>=18){
+    console.log("You can Vote");
+}
 
-//Unary Operators
-console.log(a++);
-console.log(++a);
-
-//Comparison Operators
-console.log(a>b);
-console.log(a<=b);
-console.log(a==b);
-console.log(a!=b);
-console.log(5=='5');
-console.log(5==='5');
+if (age<18){
+    console.log("You cannot vote");
+}
+console.log("code after if statement");
