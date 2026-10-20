@@ -1,7 +1,5 @@
 let cars = ["hero", "swift", "ford", "bmw"];
 let bikes = ["duke", "ktm", "r15", "splender"];
-console.log(cars.concat(bikes));
-console.log(cars);
-console.log(bikes);
-console.log(cars.reverse());
-console.log(cars);
+console.log(cars.slice(2));
+console.log(bikes.slice(1,3));
+console.log(bikes.slice(-1));
