@@ -1,4 +1,9 @@
-//QUESTION 5
-let str2 = prompt("Enter the string : ");
-console.log(`Original String = ${str2}`);
-console.log(`String after Trim = ${str2.trim()}`);
+//QUESTION 6
+let arr1 = prompt("Enter your Array :");
+let ele = prompt("Enter your element:");
+if (arr1.includes("ele")){
+    console.log("Element exist in an array");
+}
+else {
+    console.log("Element do not exists in an array");
+}
