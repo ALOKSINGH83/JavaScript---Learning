@@ -3,7 +3,7 @@ let age = 21;
 if (age>=18){
     console.log("You can Vote");
 }
-else if (age<18){
+else {
     console.log("You cannot vote");
 }
 
@@ -17,6 +17,6 @@ else if (marks>=60){
 else if (marks>=33){
     console.log("B");
 }
-else if (marks<33){
+else {
     console.log("F");
 }
