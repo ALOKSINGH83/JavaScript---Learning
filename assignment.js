@@ -1,8 +1,9 @@
-//QUESTION 3
-let str = prompt("Give Your String :");
-if (str.length == 0){
-    console.log("String is blank");
+//QUESTION 4
+let str1 = "ApNaCoLlEgE";
+let idx = 3;
+if(str1[idx] == str1[idx].toLowerCase()){
+    console.log("Character is lowercase");
 }
 else {
-    console.log("String is not blank");
+    console.log("Character is not lowercase");
 }
