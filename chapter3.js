@@ -1,12 +1,5 @@
 let cars = ["hero", "swift", "ford", "bmw"];
-console.log(cars);
-console.log(cars.push("toyota"));
-console.log(cars.push("ferrari"));
-console.log(cars);
-console.log(cars.pop());
-console.log(cars);
-console.log(cars.unshift("thar"));
-console.log(cars.unshift("duster"));
-console.log(cars);
-console.log(cars.shift());
-console.log(cars);
+console.log(cars.indexOf("ford"));
+console.log(cars.indexOf("toyota"));
+console.log(cars.includes("hero"));
+console.log(cars.includes("thar"));
