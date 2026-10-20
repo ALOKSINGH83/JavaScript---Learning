@@ -1,3 +1,3 @@
-alert("This page is not working");
-console.error("Windows Update");
-console.warn("Refresh this page");
+let firstName = prompt("ENTER YOUR FIRST NAME :");
+let lastName = prompt("ENTER YOUR LAST NAME :");
+console.log("Welcome", firstName, lastName,"!");
