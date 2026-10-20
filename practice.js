@@ -1,17 +1,26 @@
-//QUESTION 1
-let str = "apple";
-if ((str[0]==="a")&&(str.length>3)){
-    console.log("Good String");
-}
-else {
-    console.log("Bad String");
-}
+let day = 3;
 
-//QUESTION 2
-let num=12;
-if ((num%3===0) && ((num+1==15) || (num-1==11))){
-    console.log("Safe");
-}
-else {
-    console.log("Unsafe");
+switch(day){
+    case 1 :
+        console.log("Monday");
+        break;
+    case 2 :
+        console.log("Tuesday");
+        break;
+    case 3 :
+        console.log("Wednesday");
+        break;
+    case 4 :
+        console.log("Thursday");
+        break;
+    case 5 :
+        console.log("Friday");
+        break;
+    case 6 :
+        console.log("Saturday");
+        break;
+    case 7 :
+        console.log("Sunday");
+    default :
+        console.log("Wrong Day");
 }
