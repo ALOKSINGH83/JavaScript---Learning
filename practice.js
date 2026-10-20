@@ -1,13 +1,17 @@
-let size = "M";
-if (size == "XL"){
-    console.log("Price is Rs. 200");
-}
-else if (size == "L"){
-    console.log("Price is Rs. 150");
-}
-else if (size == "M"){
-    console.log("Price is Rs. 100");
+//QUESTION 1
+let str = "apple";
+if ((str[0]==="a")&&(str.length>3)){
+    console.log("Good String");
 }
 else {
-    console.log("Price is Rs. 50");
+    console.log("Bad String");
+}
+
+//QUESTION 2
+let num=12;
+if ((num%3===0) && ((num+1==15) || (num-1==11))){
+    console.log("Safe");
+}
+else {
+    console.log("Unsafe");
 }
