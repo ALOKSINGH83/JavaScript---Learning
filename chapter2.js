@@ -1,15 +1,3 @@
-let color = "red";
-
-switch(color){
-    case "red" :
-        console.log("STOP");
-        break;
-    case "yellow" :
-        console.log("SLOW DOWN");
-        break;
-    case "green" :
-        console.log("GO!!");
-        break;
-    default :
-        console.log("Light is Broken");
-}
+alert("This page is not working");
+console.error("Windows Update");
+console.warn("Refresh this page");
