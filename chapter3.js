@@ -1,4 +1,8 @@
-let msg = "apnacollege";
-console.log(msg.slice(0, 4));
-console.log(msg.slice(4));
-console.log((msg.slice(-3)));  //11-3 = 8
+let msg = "ILoveCoding";
+console.log(msg);
+console.log(msg.replace("Love", "do"));
+console.log(msg.replace("o", "x"));
+
+let str = "code";
+console.log(str);
+console.log(str.repeat(5));
