@@ -1,5 +1,7 @@
 let cars = ["hero", "swift", "ford", "bmw"];
-let bikes = ["duke", "ktm", "r15", "splender"];
-console.log(cars.slice(2));
-console.log(bikes.slice(1,3));
-console.log(bikes.slice(-1));
+console.log(cars.splice(0, 1, "safari", "ordi"));
+console.log(cars);
+console.log(cars.splice(2, 1, "duster"));
+console.log(cars);
+console.log(cars.splice(5));
+console.log(cars);
