@@ -1,15 +1,15 @@
-//Logical AND
-let marks="89";
-if ((marks>=33)&&(marks>=80)){
-    console.log("PASS1");
-}
+let color = "red";
 
-//Logical OR
-if ((marks>=33) || (marks<80)){
-    console.log("PASS2");
-}
-
-//Logical NOT
-if (!((marks>=33)&&(marks>=80))){
-    console.log("PASS3");
+switch(color){
+    case "red" :
+        console.log("STOP");
+        break;
+    case "yellow" :
+        console.log("SLOW DOWN");
+        break;
+    case "green" :
+        console.log("GO!!");
+        break;
+    default :
+        console.log("Light is Broken");
 }
