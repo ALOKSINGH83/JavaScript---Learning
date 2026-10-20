@@ -1,3 +1,4 @@
-let name = "apna college";
-console.log(name.toUpperCase());
-console.log(name.toLowerCase());
+let name = "ILoveCoding";
+console.log(name.indexOf("Love"));
+console.log(name.indexOf("love"));
+console.log(name.indexOf("v"));
