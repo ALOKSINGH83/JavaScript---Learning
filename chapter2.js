@@ -1,11 +1,11 @@
 //IF Statement
-let age = 21;
-console.log("code before if statement");
-if (age>=18){
-    console.log("You can Vote");
+let color = "red";
+if (color == "red"){
+    console.log("STOP");
 }
-
-if (age<18){
-    console.log("You cannot vote");
+if (color == "yellow"){
+    console.log("SLOW DOWN");
 }
-console.log("code after if statement");
+if (color == "green"){
+    console.log("GO!")
+}
