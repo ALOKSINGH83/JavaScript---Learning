@@ -1,13 +1,15 @@
+//Logical AND
 let marks="89";
-if (marks>=33){
-    console.log("PASS");
-    if (marks>=80){
-        console.log("Grade is : O");
-    }
-    else {
-        console.log("Grade is : A");
-    }
+if ((marks>=33)&&(marks>=80)){
+    console.log("PASS1");
 }
-else {
-    console.log("Better luck next time");
+
+//Logical OR
+if ((marks>=33) || (marks<80)){
+    console.log("PASS2");
+}
+
+//Logical NOT
+if (!((marks>=33)&&(marks>=80))){
+    console.log("PASS3");
 }
