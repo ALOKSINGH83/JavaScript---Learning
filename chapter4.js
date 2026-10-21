@@ -1,11 +1,8 @@
-let fruits = ["papaya", "litchi", "pineapple", "orange", "mango"];
+let heroes = [["iron-man", "captain-america", "thor"], ["superman", "batman", "flash"]];
 
-for (let i = 0; i<fruits.length; i++){
-    console.log(i, fruits[i]);
-}
-
-console.log("Reverse Array : ");
-
-for (let i = fruits.length-1; i>=0; i--){
-    console.log(i, fruits[i]);
+for (let i = 0; i<heroes.length; i++){
+    console.log(`List #${i}`);
+    for (let j = 0; j<heroes[i].length; j++){
+        console.log(j, heroes[i][j]);
+    }
 }
