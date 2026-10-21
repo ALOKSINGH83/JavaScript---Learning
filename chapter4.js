@@ -1,13 +1,13 @@
-// let i = 0;
-// while (i<=20){
-//     console.log(i);
-//     i++;
-// }
+const favMovie = "Doomsday";
+let guess = prompt("Enter your favorite movie");
 
-console.log("Even Numbers : ");
+while ((guess != favMovie) && (guess != "quit")){
+    guess = prompt("wrong guess!! Try Again!!");
+}
 
-let i = 0;
-while (i<=20){
-    console.log(i);
-    i=i+2;
+if (guess == favMovie){
+    console.log("Congratulations!!");
+}
+else {
+    console.log("You Quit!!");
 }
