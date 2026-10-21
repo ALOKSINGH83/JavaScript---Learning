@@ -1,14 +1,11 @@
-const favMovie = "Doomsday";
-let guess = prompt("Enter your favorite movie");
+let fruits = ["papaya", "litchi", "pineapple", "orange", "mango"];
 
-while ((guess != favMovie)){
-    if(guess != "quit"){
-        console.log("You Quit");
-        break;
-    }
-    guess = prompt("wrong guess!! Try Again!!");
+for (let i = 0; i<fruits.length; i++){
+    console.log(i, fruits[i]);
 }
 
-if (guess == favMovie){
-    console.log("Congratulations!!");
+console.log("Reverse Array : ");
+
+for (let i = fruits.length-1; i>=0; i--){
+    console.log(i, fruits[i]);
 }
