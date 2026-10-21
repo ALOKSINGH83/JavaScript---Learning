@@ -1,9 +1,10 @@
-//QUESTION 6
-let arr1 = prompt("Enter your Array :");
-let ele = prompt("Enter your element:");
-if (arr1.includes("ele")){
-    console.log("Element exist in an array");
+let arr = [1, 2, 3, 4, 5, 6, 2, 3];
+let num = prompt("Enter the element");
+
+for(let i=0; i<arr.length; i++){
+    if (arr[i] == num){
+        arr.splice(i, 1);
+    }
 }
-else {
-    console.log("Element do not exists in an array");
-}
+
+console.log(arr);
