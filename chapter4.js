@@ -1,8 +1,5 @@
-let heroes = [["iron-man", "captain-america", "thor"], ["superman", "batman", "flash"]];
+let fruits = ["pear", "apple", "litchi", "banana", "papaya", "mango"];
 
-for (let i = 0; i<heroes.length; i++){
-    console.log(`List #${i}`);
-    for (let j = 0; j<heroes[i].length; j++){
-        console.log(j, heroes[i][j]);
-    }
+for (fruit of fruits) {
+    console.log(fruit);
 }
