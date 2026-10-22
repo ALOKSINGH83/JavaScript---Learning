@@ -8,8 +8,9 @@ let post = {
 
 console.log(post);
 
-//GET Value
-console.log(post.reposts);
-console.log(post["likes"]);
-console.log(post["username"]);
-console.log(post.tags);
+//ADD / Update Value
+post.content = "One of the best things to do in world.";
+post.comment = "Congratulations!!";
+delete post.reposts;
+
+console.log(post);
