@@ -1,12 +1,8 @@
-//QUESTION 3
-let num = prompt("Enter your number : ");
-let sum = 0;
-let copy = num;
+//QUESTION 4
+let n = prompt("Enter the number to get factorial");
+let fact = 1;
 
-while( copy > 0){
-    digit = copy % 10;
-    sum += digit;
-    copy = Math.floor(copy/10);
+for ( let i=1; i<=n; i++ ){
+    fact = fact * i;
 }
-
-console.log(sum);
+console.log(`Factorial of ${n} is : ${fact}`);
