@@ -1,8 +1,12 @@
-//QUESTION 4
-let n = prompt("Enter the number to get factorial");
-let fact = 1;
+//QUESTION 5
+let arr = [2, 5, 10, 4, 2, 7, 1, 9];
+let largest = 0;
 
-for ( let i=1; i<=n; i++ ){
-    fact = fact * i;
+for (let i=0; i<=arr.length; i++){
+
+    if( largest < arr[i]){
+        largest = arr[i];
+    }
 }
-console.log(`Factorial of ${n} is : ${fact}`);
+
+console.log(`The largest number in an array is : ${largest}`);
