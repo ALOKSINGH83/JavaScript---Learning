@@ -1,12 +1,29 @@
-//QUESTION 5
-let arr = [2, 5, 10, 4, 2, 7, 1, 9];
-let largest = 0;
+//QUESTION 1
+let random = Math.floor( Math.random() * 6 ) + 1;
+console.log(random);
 
-for (let i=0; i<=arr.length; i++){
 
-    if( largest < arr[i]){
-        largest = arr[i];
+//QUESTION 2
+const garage = {
+    car: {
+        name: "Rolls Royce",
+        model: "Phantom",
+        color: "Black"
     }
 }
 
-console.log(`The largest number in an array is : ${largest}`);
+console.log(garage.car.name);
+
+
+//QUESTION 3
+const person = {
+    A: {
+        name: "Robert",
+        age: "28",
+        city: "Paris"
+    }
+}
+person.A.city = "New York";
+person.A.country = "United States";
+
+console.log(person.A);
