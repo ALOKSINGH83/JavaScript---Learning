@@ -1,10 +1,4 @@
-let arr = [1, 2, 3, 4, 5, 6, 2, 3];
-let num = prompt("Enter the element");
-
-for(let i=0; i<arr.length; i++){
-    if (arr[i] == num){
-        arr.splice(i, 1);
-    }
-}
-
-console.log(arr);
+//QUESTION 2
+let num = prompt("Enter your number : ");
+let count = num.length;
+console.log(`No. of digit in a number : ${count}`);
