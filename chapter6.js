@@ -1,12 +1,11 @@
-let age = 20; //Global Scope
-
-for (i=1; i<=5; i++){
-    console.log(i); //Block Scope
+function outerFunc() {
+    let x = 5;
+    let y = 6;
+    function innerFunc() {  //Block Scope
+        console.log(x);
+        console.log(y);
+    }
+    innerFunc();
 }
 
-if (age>=18){
-    console.log("Adult");
-}
-else {
-    console.log("Not Adult");
-}
+outerFunc();
