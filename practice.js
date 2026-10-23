@@ -1,10 +1,13 @@
-let str = ["Hi", "Its", "nice", "to", "be", "alone", "sometimes"];
-function concat( str ){
-    let result = "";
-    for (let i=0; i < str.length; i++){
-        result += str[i];
+let greet = "hello";  //Global Scope
+
+function outerGreet() {
+    let greet = "namaste";
+    console.log(greet); //Function Scope
+    function innerGreet() {
+        console.log(greet);  //Lexical Scope
     }
-    return result;
+    innerGreet();
 }
 
-console.log(concat(str));
+console.log(greet);
+outerGreet();
