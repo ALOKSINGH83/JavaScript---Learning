@@ -1,8 +1,6 @@
-function printPoem() {
-    console.log("Twinkle Twinkle little star");
-    console.log("how i wonder what you are");
-    console.log("up above the world so high");
-    console.log("like a diamond in the sky");
+function diceRoll() {
+    let random = Math.floor( Math.random() * 6 ) + 1;
+    console.log(random);
 }
 
-printPoem();
+diceRoll();
