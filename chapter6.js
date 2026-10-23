@@ -1,32 +1,8 @@
-function hello() {
-    console.log("Hello!!");
+function printPoem() {
+    console.log("Twinkle Twinkle little star");
+    console.log("how i wonder what you are");
+    console.log("up above the world so high");
+    console.log("like a diamond in the sky");
 }
 
-function printName() {
-    console.log("Alok singh");
-    console.log("Apna college");
-}
-
-function print1to5() {
-    for (let i = 1; i<=5; i++){
-        console.log(i);
-    }
-}
-
-function isAdult() {
-    let age = 19;
-    if( age >= 18){
-        console.log("Adult");
-    }
-    else {
-        console.log("Not Adult");
-    }
-}
-
-hello();
-
-printName();
-
-print1to5();
-
-isAdult();
+printPoem();
