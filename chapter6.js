@@ -1,11 +1,14 @@
-function outerFunc() {
-    let x = 5;
-    let y = 6;
-    function innerFunc() {  //Block Scope
-        console.log(x);
-        console.log(y);
-    }
-    innerFunc();
+let name = "Alok";
+let x = 5;
+
+let greet = function() {
+    console.log("hello");
 }
 
-outerFunc();
+greet();
+
+greet = function() {
+    console.log("namaste");
+}
+
+greet();
