@@ -1,8 +1,12 @@
-let sum = 20; //Global Scope
+let age = 20; //Global Scope
 
-function getSum(a,b){
-    let sum = a+b;  //Function Scope
-    console.log(sum);
+for (i=1; i<=5; i++){
+    console.log(i); //Block Scope
 }
 
-getSum(2,3);
+if (age>=18){
+    console.log("Adult");
+}
+else {
+    console.log("Not Adult");
+}
