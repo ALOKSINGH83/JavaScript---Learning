@@ -1,11 +1,19 @@
-function multipleGreet(func, count) {  //Higher order function
-    for (let i=1; i<=count; i++){
-        func();
+function oddOrEvenFactory(request) {
+    if (request == "odd"){
+        return function(n) {
+            console.log(!(n%2==0));
+        }
+    }
+    else if (request == "even"){
+        return function(n) {
+            console.log((n%2==0));
+        }
+    }
+    else {
+        console.log("Wrong Request");
     }
 }
 
-let greet = function() {
-    console.log("hello");
-}
-
-multipleGreet(greet, 45);
+let request = "odd";
+let func = oddOrEvenFactory(request);
+func(57);
