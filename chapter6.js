@@ -1,19 +1,13 @@
-function oddOrEvenFactory(request) {
-    if (request == "odd"){
-        return function(n) {
-            console.log(!(n%2==0));
-        }
-    }
-    else if (request == "even"){
-        return function(n) {
-            console.log((n%2==0));
-        }
-    }
-    else {
-        console.log("Wrong Request");
+const calculator = {
+    add: function(a, b) {
+        return a+b;
+    },
+    sub: function(a, b) {
+        return a-b;
+    },
+    mul: function(a, b) {
+        return a*b;
     }
 }
 
-let request = "odd";
-let func = oddOrEvenFactory(request);
-func(57);
+console.log(calculator.add(4, 5));
