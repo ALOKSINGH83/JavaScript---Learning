@@ -1,5 +1,5 @@
 const calculator = {
-    add: function(a, b) {
+    add: function(a, b) {  //Shorthand: add(a, b) {}
         return a+b;
     },
     sub: function(a, b) {
