@@ -1,14 +1,17 @@
-function personInfo(name, age) {
-    console.log(`${name}'s age is ${age}`)
-}
-
-personInfo("Alok", 21);
-personInfo("Samar", 46);
-
-//
 function sum(a,b){
-    console.log(a + b);
+    return a+b;
 }
 
-sum(23, 46);
-sum(3462, 4565);
+let s = sum(18, 45);
+console.log(s);
+
+function isAdult(age) {
+    if(age>=18){
+        return "Adult";
+    }
+    else {
+        return "Not Adult";
+    }
+}
+
+console.log(isAdult(23));
