@@ -1,14 +1,11 @@
-let name = "Alok";
-let x = 5;
+function multipleGreet(func, count) {  //Higher order function
+    for (let i=1; i<=count; i++){
+        func();
+    }
+}
 
 let greet = function() {
     console.log("hello");
 }
 
-greet();
-
-greet = function() {
-    console.log("namaste");
-}
-
-greet();
+multipleGreet(greet, 45);
