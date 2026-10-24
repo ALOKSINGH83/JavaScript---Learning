@@ -1,7 +1,24 @@
-let str = () => (console.log("Apna College"));
-let id1 = setInterval ( str, 2000);
-//clearInterval(id1)  --  stops the interval function when we want by just writing the syntax
-
-let str2 = () => (console.log("Learner"));
-let id2 = setInterval ( str2, 3000);
-//clearInterval(id2)  --  stops the interval function when we want by just writing the syntax
+const student = {
+    name: "alok",
+    age: 21,
+    marks: 95,
+    prop: this,  //global scope
+    getName: function() {
+        console.log(this);
+        return this.name;
+    },
+    getMarks: () => {
+        console.log(this);  //parents scope --> windows
+        return this.marks;
+    },
+    getInfo1: function () {
+        setTimeout ( () => {
+            console.log(this);  //student
+        }, 2000);
+    },
+    getInfo2: function () {
+        setTimeout ( function () {
+            console.log(this);  //windows
+        }, 2000);
+    }
+}
