@@ -1,13 +1,13 @@
-let greet = "hello";  //Global Scope
+//QUESTION 1
+const sqr = (n) => (n*n);
+console.log(sqr(6));
 
-function outerGreet() {
-    let greet = "namaste";
-    console.log(greet); //Function Scope
-    function innerGreet() {
-        console.log(greet);  //Lexical Scope
-    }
-    innerGreet();
-}
+//QUESTION 2
+let id = setInterval( function() {
+    console.log("Hello");
+}, 2000);
 
-console.log(greet);
-outerGreet();
+setTimeout ( () => {
+    clearInterval(id);
+    console.log("Clear Interval ran");
+}, 10000);
