@@ -1,6 +1,7 @@
-console.log("Hi there!");
-
 let str = () => (console.log("Apna College"));
-setTimeout ( str, 3000);
+let id1 = setInterval ( str, 2000);
+//clearInterval(id1)  --  stops the interval function when we want by just writing the syntax
 
-console.log("Welcome to");
+let str2 = () => (console.log("Learner"));
+let id2 = setInterval ( str2, 3000);
+//clearInterval(id2)  --  stops the interval function when we want by just writing the syntax
