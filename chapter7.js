@@ -1,11 +1,6 @@
-const sum = (a, b) => {
-    return a+b;
-}
-console.log(sum(4, 5));
+console.log("Hi there!");
 
-// Implicit return
-const mul = (a, b) => (a*b);
-console.log(sum(3,4));
+let str = () => (console.log("Apna College"));
+setTimeout ( str, 3000);
 
-const pow = (n) => (n*n*n);
-console.log(pow(6));
+console.log("Welcome to");
