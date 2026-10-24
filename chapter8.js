@@ -1,26 +1,7 @@
-// function sum() {
-//     return arguments.reduce((add, el) => {
-//         return add + el;
-//     })
-// };
-// console.log(sum());
+let names = ["tony", "steve", "bruce", "clint", "xyz", "abc", "pqr", "mno"];
+let [winner, runnerUp, secondRunnerUp, ...others] = names;
 
-function sum(...args) {
-    return args.reduce((add, el) => {
-        return add + el;
-    })
-};
-console.log(sum(3, 5, 6, 7));
-
-function minVal(msg, ...args) {
-    console.log(msg);
-    return args.reduce((min, el) => {
-    if(min>el){
-        return el;
-    }
-    else {
-        return min;
-    }
-    }
-)};
-console.log(minVal("hello", 1,8,7,6,5));
+console.log(winner);
+console.log(runnerUp);
+console.log(secondRunnerUp);
+console.log(others);
