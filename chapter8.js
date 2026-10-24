@@ -1,15 +1,7 @@
 //Every
-let arr = [1,2,3,4,5];
+let arr = [1,2,3,7,8,12,45,67,91,47,54,61];
 
-let val = arr.every( (el) => {
-    return el%2 == 0;
+let reduced = arr.reduce( (res, el) => {
+    return res+el;
 });
-console.log(val);
-
-//Some
-let arr1 = [1,2,3,4,5,6];
-
-let val1 = arr.some( (el) => {
-    return el%2 != 0;
-});
-console.log(val1);
+console.log(reduced);
