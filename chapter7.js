@@ -1,13 +1,13 @@
-const student = {
-    name: "alok",
-    age: 21,
-    eng: 89,
-    math: 98,
-    phy: 93,
-    getAvg() {
-        let avg = ( this.eng + this.math + this.phy) / 3
-        console.log(avg);
-    }
+console.log("hello");
+console.log("hello");
+
+try {
+    console.log(a);
+} catch(err) {
+    // console.log("error detected.. a is not defined");
+    console.log(err);
 }
 
-student.getAvg();
+console.log("hello2");
+console.log("hello2");
+console.log("hello2");
