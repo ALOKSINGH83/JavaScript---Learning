@@ -1,7 +1,12 @@
-let names = ["tony", "steve", "bruce", "clint", "xyz", "abc", "pqr", "mno"];
-let [winner, runnerUp, secondRunnerUp, ...others] = names;
+const student = {
+    name: "alok",
+    age: 21,
+    marks: 92,
+    username: "@alok123",
+    password: 123,
+};
 
-console.log(winner);
-console.log(runnerUp);
-console.log(secondRunnerUp);
-console.log(others);
+let {username: user, password, city = "Mumbai"} = student;
+console.log(user);
+console.log(password);
+console.log(city);
