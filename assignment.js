@@ -1,13 +1,12 @@
-//QUESTION 1
-let arr = [4,5,6,1,3,2,9,8,7];
-function arrayAverage(arr) {
-    let sum = 0;
-    let arrLen = arr.length;
-    for(let i=0;i<arr.length;i++) {
-        sum += arr[i];
-    };
-    //return sum;
-    let avg = (sum / arrLen);
-    return avg;
+//QUESTION 2
+let n = prompt("Enter your number:");
+let isEven = (n) => {
+    if(n%2 == 0){
+        console.log(`${n} is even`);
+    }
+    else {
+        console.log(`${n} is not even`);
+    }
 };
-console.log(arrayAverage(arr));
+
+isEven(n);
