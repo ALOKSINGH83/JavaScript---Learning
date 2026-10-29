@@ -1,11 +1,14 @@
-//QUESTION 1
-let arr = [2,3,5,1,4,6,9,7,8,11,14,13,17,10,19];
-let num = 5;
-function largeElement(arr, num) {
-    for(let i=0;i<arr.length;i++){
-        if(arr[i]>num){
-            console.log(arr[i]);
+//QUESTION 2
+let str = "abcdabcdefgggh";
+
+function uniqueChar(str){
+    let ans = "";
+    for(let i=0;i<str.length;i++) {
+        let currChar = str[i];
+        if(ans.indexOf(currChar) == -1) {  //if current character is not added, then add it in ans.//Otherwise it is a duplicate
+            ans += currChar;
         };
     };
+    return ans;
 };
-largeElement(arr, num);
+console.log(uniqueChar(str));
