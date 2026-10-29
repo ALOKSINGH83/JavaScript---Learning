@@ -1,14 +1,13 @@
-//QUESTION 4
-let length = 4;
-function callback() {
-    console.log(this.length);
-}
+//QUESTION 1
+let arr = [1,2,3,4,5,6,7,8,9];
 
-const object = {
-    length: 5,
-    method(callback) {
-        callback();
-    },
-};
+let square = arr.map((el) => el*el);
 
-object.method(callback, 1, 2);
+let sum = arr.reduce( (res, el) => {return res+=el});
+
+let average = sum / arr.length;
+
+console.log(arr);
+console.log(square);
+console.log(sum);
+console.log(average);
