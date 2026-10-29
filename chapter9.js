@@ -1,6 +1,5 @@
-// let smallImg = document.getElementsByClassName("oldImg");
+console.dir(document.querySelector("p")); //Select first p element
 
-// for(let i=0;i<smallImg.length;i++){
-//     smallImg[i].src = "assetsch9/spiderman_img.png";
-//     console.log(`value of old image ${i} is changed`);
-// };
+console.dir(document.querySelectorAll(".oldImg")); //Select all element of class = oldImg
+
+console.dir(document.querySelectorAll(".box a"));
