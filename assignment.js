@@ -1,17 +1,10 @@
-//QUESTION 4
-let str = "abcdefghijklmnopqrstuvwxyz";
+//QUESTION 5
+let start = 31;
+let end = 67;
 
-function countVowel(str){
-    let count = 0;
-    for(let i=0;i<str.length;i++){
-        if(str[i] == "a" ||
-            str[i] == "e"||
-            str[i] == "i"||
-            str[i] == "o"||
-            str[i] == "u") {
-            count++;
-        };
-    };
-    return count;
+function randomNumber(start, end){
+    let diff = end - start;
+    let num = Math.floor( Math.random()*diff ) + start;
+    return num;
 };
-console.log(countVowel(str));
+console.log(randomNumber(start, end));
