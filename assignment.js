@@ -1,9 +1,6 @@
-//QUESTION 4
-let arr = [2,3,5,4,9,6,1,8,7];
+//QUESTION 5
 
-const doubleAndReturnArgs = (arr, ...args) => [
-...arr,
-...args.map((v) => v*2),
-];
-
-console.log(doubleAndReturnArgs(arr, 13, 15, 11, 9, 8));
+const mergeObjects = (obj1, obj2) => (
+    {...obj1, ...obj2}
+);
+console.log(mergeObjects({a: 1, b: 5}, {c: 6, d: 7, e: 9}));
