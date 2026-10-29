@@ -1,14 +1,15 @@
-//QUESTION 2
-let str = "abcdabcdefgggh";
+//QUESTION 3
+let country = ["Australia", "Germany", "United States of America"];
 
-function uniqueChar(str){
-    let ans = "";
-    for(let i=0;i<str.length;i++) {
-        let currChar = str[i];
-        if(ans.indexOf(currChar) == -1) {  //if current character is not added, then add it in ans.//Otherwise it is a duplicate
-            ans += currChar;
+function largeCountry(country){
+    let ansIdx = 0;
+    for(let i=0;i<country.length;i++){
+        let ansLen = country[ansIdx].length;
+        let currLen = country[i].length;
+        if(currLen > ansLen){
+            ansIdx = i;
         };
     };
-    return ans;
+    return country[ansIdx];
 };
-console.log(uniqueChar(str));
+console.log(largeCountry(country));
