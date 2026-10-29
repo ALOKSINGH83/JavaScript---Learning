@@ -1,15 +1,17 @@
-//QUESTION 3
-let country = ["Australia", "Germany", "United States of America"];
+//QUESTION 4
+let str = "abcdefghijklmnopqrstuvwxyz";
 
-function largeCountry(country){
-    let ansIdx = 0;
-    for(let i=0;i<country.length;i++){
-        let ansLen = country[ansIdx].length;
-        let currLen = country[i].length;
-        if(currLen > ansLen){
-            ansIdx = i;
+function countVowel(str){
+    let count = 0;
+    for(let i=0;i<str.length;i++){
+        if(str[i] == "a" ||
+            str[i] == "e"||
+            str[i] == "i"||
+            str[i] == "o"||
+            str[i] == "u") {
+            count++;
         };
     };
-    return country[ansIdx];
+    return count;
 };
-console.log(largeCountry(country));
+console.log(countVowel(str));
