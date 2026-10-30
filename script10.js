@@ -1,12 +1,10 @@
-let btn = document.querySelector('button');
-console.dir(btn);
+let btns = document.querySelectorAll('button');
+console.dir(btns);
 
-//btn.onclick = function() {
-//    console.log("Button is clicked");
-//};
+for(btn of btns) {
+   btn.onclick = sayHello;
+};
 
 function sayHello() {
     console.log("Hello!!");
 };
-
-btn.onclick = sayHello;
