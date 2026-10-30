@@ -2,12 +2,17 @@ let btns = document.querySelectorAll('button');
 console.dir(btns);
 
 for(btn of btns) {
-   btn.onclick = sayHello;
-   btn.onmouseenter = function () {
-    console.log("You entered the button");
-   };
+   btn.addEventListener("click", sayHello);
+   btn.addEventListener("click", sayName);
+//    btn.addEventListener("dblclick", function() {
+//     console.log("You double clicked me!!");
+//    });
 };
 
 function sayHello() {
-    console.log("Hello!!");
+    alert("Hello!!");
+};
+
+function sayName() {
+    console.log("Apna College");
 };
