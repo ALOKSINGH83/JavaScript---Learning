@@ -1,18 +1,21 @@
-let btns = document.querySelectorAll('button');
-console.dir(btns);
+let btn = document.querySelector("button");
 
-for(btn of btns) {
-   btn.addEventListener("click", sayHello);
-   btn.addEventListener("click", sayName);
-//    btn.addEventListener("dblclick", function() {
-//     console.log("You double clicked me!!");
-//    });
-};
+btn.addEventListener("click", function() {
+    let h1 = document.querySelector("h1");
+    let randomColor = getRandomColor();
+    h1.innerText = randomColor;
 
-function sayHello() {
-    alert("Hello!!");
-};
+    let div = document.querySelector("div");
+    div.style.backgroundColor = randomColor;
 
-function sayName() {
-    console.log("Apna College");
-};
+    console.log("Color updated");
+})
+
+function getRandomColor() {
+    let red = Math.floor(Math.random() * 255);
+    let green = Math.floor(Math.random() * 255);
+    let blue = Math.floor(Math.random() * 255);
+
+    let color = `rgb(${red}, ${green}, ${blue})`;
+    return color;
+}
