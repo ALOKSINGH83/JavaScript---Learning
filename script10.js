@@ -2,12 +2,16 @@ let form = document.querySelector("form");
 
 form.addEventListener( "submit", function(event) {
     event.preventDefault();
+});
 
-    let user = this.elements[0];  //document.querySelector("#user");
-    let pass = form.elements[1];  //document.querySelector("#pass");
+let user = document.querySelector("input")
 
-    console.log(user.value);
-    console.log(pass.value);
+user.addEventListener("input", function() {
+    console.log("input changed");
+    console.log("final value: ",this.value);
+});
 
-    alert(`Hi ${user.value} your password is set to ${pass.value}`);
+user.addEventListener("change", function() {
+    console.log("change event");
+    console.log("final value: ",this.value);
 });
