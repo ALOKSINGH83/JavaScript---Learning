@@ -1,20 +1,26 @@
-//QUESTION 1
-let arr = [1,2,3,7,8,10,12,45,30,67,70,91,47,90,54,61];
+//(i)
+let para1 = document.createElement('p');
+para1.innerText = "Hey I'm red!";
 
-let factor = arr.every( (el) => {
-    return el%10 == 0;
-});
-console.log(factor);
+document.querySelector("body").append(para1);
 
-//QUESTION 2
-let arr1 = [1,2,3,7,8,10,12,44,54,61];
+//(ii)
+let h3 = document.createElement('h3');
+h3.innerText = "I'm a blue h3!";
+h3.style.color = "blue";
 
-let minVal = arr1.reduce( (min, el) => {
-    if(el < min) {
-        return el;
-    }
-    else {
-        return min;
-    }
-});
-console.log(minVal);
+document.querySelector("body").append(h3);
+
+//(iii)
+let div = document.createElement('div');
+div.style.backgroundColor = "pink";
+div.style.borderColor = "black";
+document.querySelector("body").append(div);
+
+let h1 = document.createElement('h1');
+h1.innerText = "I'm in a div";
+let para2 = document.createElement('p');
+para2.innerText = "ME TOO!";
+
+div.appendChild(h1);
+div.appendChild(para2);
