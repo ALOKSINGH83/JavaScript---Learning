@@ -1,14 +1,8 @@
-let h1 = document.querySelector("h1");
-let h3 = document.querySelector("h3");
-let p = document.querySelector("p");
+let inp = document.querySelector("input");
 let btn = document.querySelector("button");
 
-function useThis() {
-    console.dir(this.innerText);
-    this.style.backgroundColor = "gray";
-};
-
-btn.addEventListener("click", useThis);
-h1.addEventListener("click", useThis);
-h3.addEventListener("click", useThis);
-p.addEventListener("click", useThis);
+inp.addEventListener("keydown", function(event) {
+    console.log("Key =", event.key);
+    console.log("Code =", event.code);
+    console.log("You pressed the key");
+})
