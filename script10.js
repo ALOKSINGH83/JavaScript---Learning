@@ -1,10 +1,14 @@
-let box = document.querySelector(".box");
+let h1 = document.querySelector("h1");
+let h3 = document.querySelector("h3");
 let p = document.querySelector("p");
+let btn = document.querySelector("button");
 
-p.addEventListener("dblclick", function() {
-    console.log("You clicked the para.");
-});
+function useThis() {
+    console.dir(this.innerText);
+    this.style.backgroundColor = "gray";
+};
 
-box.addEventListener("mouseenter", function() {
-    console.log("You entered the div");
-})
+btn.addEventListener("click", useThis);
+h1.addEventListener("click", useThis);
+h3.addEventListener("click", useThis);
+p.addEventListener("click", useThis);
