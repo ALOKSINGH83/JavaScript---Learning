@@ -1,17 +1,7 @@
-let form = document.querySelector("form");
-
-form.addEventListener( "submit", function(event) {
-    event.preventDefault();
-});
-
-let user = document.querySelector("input")
+let p = document.querySelector("p");
+let inp = document.querySelector("#user")
 
 user.addEventListener("input", function() {
-    console.log("input changed");
-    console.log("final value: ",this.value);
-});
-
-user.addEventListener("change", function() {
-    console.log("change event");
-    console.log("final value: ",this.value);
+    console.log(inp.value);
+    p.innerText = inp.value;
 });
